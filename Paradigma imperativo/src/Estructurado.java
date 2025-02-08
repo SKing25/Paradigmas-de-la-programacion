@@ -107,8 +107,8 @@ public class Estructurado {
 
                         case 4:
                             System.out.println("Materia: Metodologia de investigacion");
-                            System.out.println("Franja horaria: Lunes: 8:00 - 9:00 AM, Miercoles: 12:00 AM - 2:00 PM, Viernes:" +
-                                    " 4:00 - 6:00 PM");
+                            System.out.println("Franja horaria: Lunes: 8:00 - 9:00 AM, Miercoles: 2:00 - 4:00 PM, Viernes: " +
+                                    "12:00 AM - 2:00 PM");
                             seleccionRegistrar = Integer.parseInt(JOptionPane.showInputDialog("¿Desea registrar la materia?" +
                                     " 1.si 0.no"));
 
