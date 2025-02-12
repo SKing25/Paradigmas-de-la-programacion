@@ -59,7 +59,8 @@ public class Procedimental {
     // Procedimiento para mostrar y registrar cursos
     private static void mostrarYRegistrarCursos() {
         int opcionCurso = Integer.parseInt(JOptionPane.showInputDialog(
-                "Selecciones el curso que desee inscribir: \n1. Introduccion a derecho\n2. Laboratorio\n3. Etica profesional\n4. Metodologia de investigacion\n5. Fundamentos de la constitucion"));
+                "Selecciones el curso que desee inscribir: \n1. Introduccion a derecho\n2. Laboratorio\n3. " +
+                        "Etica profesional\n4. Metodologia de investigacion\n5. Fundamentos de la constitucion"));
 
         switch (opcionCurso) {
             case 1:
@@ -86,7 +87,8 @@ public class Procedimental {
     // Procedimientos para cada materia
     private static void registrarIntroduccionDerecho() {
         System.out.println("Materia: Introduccion a derecho");
-        System.out.println("Franja horaria: Lunes: 2:00 - 4:00 PM, Miercoles: 4:00 - 6:00 PM, Viernes: 9:00 - 11:00 AM ");
+        System.out.println("Franja horaria: Lunes: 2:00 - 4:00 PM, Miercoles: 4:00 - 6:00 PM, Viernes: 9:00 - " +
+                "11:00 AM ");
         if (confirmarRegistro()) {
             lunes[5] = " Introduccion a derecho";
             miercoles[6] = " Introduccion a derecho";
@@ -108,7 +110,8 @@ public class Procedimental {
 
     private static void registrarEticaProfesional() {
         System.out.println("Materia: Etica profesional");
-        System.out.println("Franja horaria: Lunes: 7:00 - 8:00 AM, Miercoles: 12:00 AM - 2:00 PM, Viernes: 4:00 - 6:00 PM");
+        System.out.println("Franja horaria: Lunes: 7:00 - 8:00 AM, Miercoles: 12:00 AM - 2:00 PM, Viernes: 4:00 - " +
+                "6:00 PM");
         if (confirmarRegistro()) {
             lunes[1] = " Etica profesional";
             miercoles[4] = " Etica profesional";
@@ -119,7 +122,8 @@ public class Procedimental {
 
     private static void registrarMetodologiaInvestigacion() {
         System.out.println("Materia: Metodologia de investigacion");
-        System.out.println("Franja horaria: Lunes: 8:00 - 9:00 AM, Miercoles: 12:00 AM - 2:00 PM, Viernes: 4:00 - 6:00 PM");
+        System.out.println("Franja horaria: Lunes: 8:00 - 9:00 AM, Miercoles: 12:00 AM - 2:00 PM, Viernes: 4:00 - " +
+                "6:00 PM");
         if (confirmarRegistro()) {
             lunes[2] = "Metodologia de investigacion";
             miercoles[5] = "Metodologia de investigacion";
@@ -130,7 +134,8 @@ public class Procedimental {
 
     private static void registrarFundamentosConstitucion() {
         System.out.println("Materia: Fundamentos de la constitucion");
-        System.out.println("Franja horaria: Lunes: 2:00 - 4:00 PM, Miercoles: 4:00 - 6:00 PM, Jueves: 9:00 - 11:00 AM ");
+        System.out.println("Franja horaria: Lunes: 2:00 - 4:00 PM, Miercoles: 4:00 - 6:00 PM, Jueves: 9:00 - " +
+                "11:00 AM ");
         if (confirmarRegistro()) {
             lunes[6] = "Fundamentos de la constitucion";
             miercoles[6] = "Fundamentos de la constitucion";
@@ -141,7 +146,8 @@ public class Procedimental {
 
     // Procedimiento para confirmar registro
     private static boolean confirmarRegistro() {
-        int seleccionRegistrar = Integer.parseInt(JOptionPane.showInputDialog("¿Desea registrar la materia? 1.si 0.no"));
+        int seleccionRegistrar = Integer.parseInt(JOptionPane.showInputDialog("¿Desea registrar la materia? " +
+                "1.si 0.no"));
         if (seleccionRegistrar != 1) {
             System.out.println("Redirigiendo a la seleccion de materias");
             return false;
@@ -157,3 +163,4 @@ public class Procedimental {
         }
     }
 }
+
